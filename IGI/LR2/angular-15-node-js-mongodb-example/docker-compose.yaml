@@ -1,0 +1,40 @@
+
+services:
+  db:
+    image: mongo:6
+    container_name: mongodb_container
+    ports:
+      - "27017:27017"
+    volumes:
+      - mongo-data:/data/db
+    networks:          
+      - mean-network
+
+  backend:
+    build: ./node-express-server
+    container_name: node_backend
+    ports:
+      - "8080:8080"
+    depends_on:
+      - db #после db
+    networks:
+      - mean-network
+
+  frontend:
+    build: ./angular-15-client
+    container_name: angular_frontend
+    ports:
+      - "8081:8081"
+    stdin_open: true #интерактивный
+    tty: true #режим
+    depends_on:
+      - backend
+    networks:
+      - mean-network
+
+networks:
+  mean-network:
+    driver: bridge
+
+volumes:
+  mongo-data:
