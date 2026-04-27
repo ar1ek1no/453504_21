@@ -1,0 +1,13 @@
+Sentences: 16
+Declarative sentences: 12
+Interrogative sentences: 2
+Exclamative sentences: 2
+Words: 120
+Letters: 699
+Average words per sentence: 7.5
+Average letters per word: 5.825
+Smileys: 1
+Phones: ['299666678', '296156630', '299879129']
+Comma pairs: ['amet, consectetur', 'amet, mattis', 'ante, ut', 'arcu, elementum', 'consequat,\nerat', 'eleifend, magna', 'hendrerit,\nmagna', 'ligula, nec', 'posuere, orci', 'sed, porta', 'semper,\ntincidunt', 'tortor, ut', 'turpis, imperdiet']
+Glascogl: ['', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '']
+Spacerounded: 44
